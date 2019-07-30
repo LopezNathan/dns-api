@@ -6,6 +6,7 @@ COPY requirements.txt requirements.txt
 RUN pip install -r /app/requirements.txt
 
 COPY main.py main.py
+RUN chmod +x main.py
 
 EXPOSE 5000
 
